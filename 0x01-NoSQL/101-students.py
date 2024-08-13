@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-""" a Python function that returns all students sorted by average score """
+""" MongoDB Operations with Python using pymongo """
 
 
 def top_students(mongo_collection):
+    """ Returns all students sorted by average score """
 
     top_st = mongo_collection.aggregate([
         {
